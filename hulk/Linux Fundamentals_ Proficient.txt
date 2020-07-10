@@ -1,0 +1,36 @@
+Q: 1.What is firmware?
+A: Software embedded into the system hardware
+Q: 2.What folder is the generic mount point for file systems or devices?
+A: /mnt
+Q: 3.What command would you issue to install VLC in Ubuntu?
+A: sudo apt-get install vlc
+Q: 4.What command views disk usage?
+A: du
+Q: 5.Using systemd tools, how would you set the default runlevel so the machine automatically boots to a graphical user interface (GUI) desktop?
+A: systemctl set-default graphical.target
+Q: 6.What command displays all processes in a tree format?
+A: pstree
+Q: 7.What would you do to change user and group ownership to root on the file users.txt?
+A: Use the sudo chown root:root users.txt command
+Q: 8.What command would you type in Bash to view the current date/time/time zone?
+A: date
+Q: 9.What command displays a static snapshot of running processes?
+A: ps
+Q: 10.What command would you issue to display all the groups associated with the system?
+A: cat /etc/group
+Q: 11.Which command will give you an encrypted connection through which you can transfer a file to a remote host?
+A: scp filename.txt account@192.168.1.20:/home/account/
+Q: 12.In a Bash shell, what would you type to set an environment variable of EDITOR to nano and add the setting to your environment?
+A: EDITOR=nano;export EDITOR
+Q: 13.What are the group permissions on a file assigned rwxrw-r--?
+A: Read and write
+Q: 14.You must create a folder named spreadsheets in a user's Documents directory. Your print working directory (PWD) is /home/username. What command would you use?
+A: mkdir Documents/spreadsheets
+Q: 15.What command assigns others rwx permissions to the file users.txt?
+A: chmod o=rwx users.txt
+Q: 16.Which file sets the PATH environment variable for the current user on an Ubuntu system?
+A: ~/.profile
+Q: 17.What does chmod -R 764 /Documents do?
+A: The command recursively assigns user RWX, Group, RW, and Others R to all files and folders within /Documents.
+Q: 18.You download the ISO file from the Linux distribution and you would like to install locally. What is your next step?
+A: Write the image to a bootable DVD or USB

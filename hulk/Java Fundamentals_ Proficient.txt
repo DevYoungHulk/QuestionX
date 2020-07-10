@@ -1,0 +1,42 @@
+Q: 1.You want to package an application composed of many class files in a single Java Archive (JAR) and make it executable. How will you proceed?
+A: Create a single JAR file containing a MANIFEST.mf file with a reference to the class that contains the main() method.
+Q: 2.You need to concatenate a list of instances of String together. What precautions should you take?
+A: Avoid the unnecessary creation of instances of String.
+Q: 3.What element is a part of Java Standard Edition (SE)?
+A: Collection API
+Q: 4.You want to concatenate several instances of String together. What is the most efficient way to do it?
+A: Create a StringBuilder, add the strings in it, and convert it into the result String.
+Q: 5.Which of the following is a method from the Object class?
+A: equals(Object obj)
+Q: 6.Which of the following is a valid declaration for an array that will hold 5 integers?
+A: int[] array = new int[5];
+Q: 7.What implementation of List does the Collectors.toList() create?
+A: ArrayList
+Q: 8.What is the root class of the exception class' hierarchy?
+A: Throwable
+Q: 9.You have a class with private constructors only. How can you provide a way to create instances of this class?
+A: Create a static method within this class that will call one of the private constructors.
+Q: 10.You have an application developed by two teams. The first team uses Windows development machines and the second one MacOS development machines. They both deliver a module of your application, the source code and the compiled code in JARs. How can you run this application on your Linux server?
+A: Package the JARs, deploy them and run them without having to recompile anything.
+Q: 11.You have the following abstract class:
+Which of the following classes is a valid concrete extension of this class?
+A: public class StringHolder extends AbstractStringHolder {
+   public String get() {
+      return null;
+   }
+}
+Q: 12.The following code is a part of a Java program: How many instances of String are created at the end of the program?
+A: 3
+Q: 13.Which of the following snippets would compile?
+A: long l = 1L + 2;
+Q: 14.Given the following enumeration:
+What code can you write to get an instance of this enum?
+A: Civility civility = Civility.MRS;
+Q: 15.What code do you need to add to a class Collection so that all the extensions of this class provide their own implementation of a method size()?
+A: abstract int size();
+Q: 16.What happens when you try to add twice the same element to a Set?
+A: The add() method returns false and the element is not added.
+Q: 17.What is a lambda expression in Java?
+A: An implementation of any functional interface
+Q: 18.What command must you use to execute a Main class that contains a main() method?
+A: $ java Main

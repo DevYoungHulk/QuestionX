@@ -1,0 +1,18 @@
+Q: 1.What ensures the Gradle version remains the same for an Android app project irrespective of OS, Gradle installation and number of people working on the project?
+A: gradle-wrapper
+Q: 2.What happens if you try to run an application that doesn't contain the test and Android test directories?
+A: The Run Test option becomes unavailable.
+Q: 3.Where is the Kotlin bytecode viewer in Android Studio?
+A: Tools > Kotlin
+Q: 4.What advantage does running Update Project offer?
+A: It requests changes from multiple project roots, and then merges the corresponding changes into the local tracking branch.
+Q: 5.You added new functionality in your app to include the use of the Google Maps SDK as well as lazy image loading and processing. When you run your app, you get errors that you have exceeded the default Java heap size. How do you fix this to ensure Google Maps and your image processing works?
+A: Update the javaHeapSize property in the dexOptions to allow for a larger heap for newer devices.
+Q: 6.You have created a new layout file named layout-land-sw600dp-long/layout.xml to support other screen sizes and orientations. But when you run your application, this doesn't give you the right results. What is the problem with this file?
+A: The land qualifier should be at the end of the name.
+Q: 7.You are using the Inspect Code Linter to analyze your code and make it as clean and structured as possible. How can you enhance the linter to help it find other places that could be structured better to find potential errors?
+A: Use Android Support Annotations such as @Nullable and @StringRes.
+Q: 8.Which of the following is a valid resource directory name when supporting different screen orientations?
+A: layout-w600dp-land
+Q: 9.Where do you add new maven repositories used to resolve gradle dependencies?
+A: In the project build.gradle file

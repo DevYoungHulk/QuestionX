@@ -1,0 +1,36 @@
+Q: 1.What Java type stores the maximum number of decimals?
+A: double
+Q: 2.What is terminal client used for?
+A: To execute commands on a remote system
+Q: 3.Which version control system (VCS) IS NOT supported by Android Studio 3 out-of-the-box?
+A: Perforce
+Q: 4.Consider the following Java class:Which is always true for any subclass of the above class?
+A: It must implement the makeNoise method
+Q: 5.In Java, when comparing threads to processes, which of the following statements is true?
+A: Each process has its own memory space while threads share memory resources
+Q: 6.Which code block contains features introduced in Java 8?
+A: List<String> firstNames = new ArrayList<>();  //firstNames gets some valuesfirstNames.forEach(s -> System.out.println(s));
+Q: 7.When can two methods of the same class have the same name?
+A: The two methods take different arguments
+Q: 8.What is the output of the following Java Program?
+A: Class2
+Q: 9.What is a requirement to build and run Java applications using Android Studio?
+A: The JRE_HOME variable must be set correctly.
+Q: 10.The following code block is responsible for keeping track of the number of hits a web service gets in a multi-threaded application. The support team of this application has reported inconsistencies between their manually-counted hit numbers and what the application reports. Inspecting the code snippet below, what could be the possible cause of this problem?
+A: Methods have to be synchronized
+Q: 11.Which solution represents a good alternative to threads polling for communication?
+A: Using a publisher-subscriber model, where 'client' threads get notified about results of interest
+Q: 12.What does a HashSet do?
+A: Implements a Set
+Q: 13.One difference between the avdmanager command line tool and the equivalent AVD Manager UI tool in Android Studio is that:
+A: the AVD Manager UI tool uses a wizard-style for creating an AVD.
+Q: 14.Which is a feature of Gradle that Maven does not include?
+A: A long-lived 'daemon' process which caches information about the build
+Q: 15.A developer is working on an Android application. The build process involves the automated generation of Java code, which, unfortunately, doesn't work well due to a third-party library. When debugging the issue, the developer cannot see ANY of the generated code under the 'java' directory in the Project view. What could be the problem?
+A: The developer is looking in the wrong place; any generated Java code will be present under generated Java.
+Q: 16.Which of the following is a valid prerequisite for installing Gradle?
+A: Java
+Q: 17.When creating a concrete Generics Collection with a generic type parameter String, can the diamond (<>) operator be used?
+A: Yes, on the right handside of the operation (e.g. constructor invokation)
+Q: 18.Which feature was added with Java 8?
+A: Interface default methods

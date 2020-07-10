@@ -1,0 +1,40 @@
+Q: 1.You install multiple apps that run on Android below API 21 with the same custom permissions definitions. The first one you install has protectionLevel set as normal and second one has it set as signature. Which app will be granted the permission?
+A: The OS will automatically grant this permission to every application that has the permission declared.
+Q: 2.In which file would you specify a Network Security Configuration file?
+A: AndroidManifest.xml
+Q: 3.You have a camera app which stores the images taken on the disk. You want the images to be publicly accessible by all apps, but there is a bug that removes images when your app is uninstalled. What could be the issue?
+A: You stored the images in an app-specific directory on external storage.
+Q: 4.You are trying to check and update the device's security provider using the installIfNeeded method and the following exception is thrown: GooglePlayServicesRepairableException. What happened?
+A: The method throws this exception 
+to indicate that the device's Google 
+Play services library is out of date.
+Q: 5.Which <network-security-config> tag allows debugging against a local HTTP server?
+A: <debug-overrides>
+Q: 6.Prior to API Level 19, what would the following line of code do for a JavaScriptInterface "Android"?
+A: Lists all files on the phone's SD card
+Q: 7.A TrustManager was recently added to an app to successfully gain access to a private server, but now public websites aren't accessible. What would you change to allow public websites to work again?
+A: Add the desired public CAs to the TrustManager to restore connectivity to all desired domains.
+Q: 8.How would you optimize a Network Security Configuration file where multiple <domain-config> tags reference the same certificate?
+A: Reference the certificate in a <base-config>, and remove the <domain-config> duplicates.
+Q: 9.In a Network Security Configuration file, what is the difference between the <pin> and <pin-set> tags?
+A: The <pin-set> contains a list of <pin> tags.
+Q: 10.If a nested <domain-config> tag is using a value from a <base-config> tag, what can be done to supply a unique value to the nested tag?
+A: Define the unique value inside the nested tag itself.
+Q: 11.ProviderInstaller is unable to install an updated Provider. What does this imply?
+A: Your device's security provider 
+might be vulnerable to known 
+exploits.
+Q: 12.A camera app, an image editing app, a travel reviews app, and a photo-sharing app all allow the user to take pictures. You need to make sure that no functionality is compromised, while not requesting any unnecessary permissions. How will you decide which applications will need the Camera permission, versus those which can use it through Intents?
+A: When a custom UI for the camera is critical to the app
+Q: 13.A third-party app stores its files in a particular directory. You have the directory's path and want scoped access to it. You call createAccessIntent(path) but it doesn't work. What could be the reason?
+A: createAccessIntent() works only with standard media directories, and this isn't one.
+Q: 14.Suppose an app is fetching secure data using urlConnection.getInputStream() against a recently updated remote server, and now the app sees the exception: "CertPathValidatorException: Trust anchor for certification path not found". What can cause this issue?
+A: The remote server's CA is not using one of the trusted certificates
+Q: 15.When is the best time to request a permission?
+A: When permission is required
+Q: 16.What would you do to ensure that an app remains secure when a pinned certificate has expired?
+A: Add a backup <pin> to ensure app connectivity.
+Q: 17.What is the output of the following code:
+A: The string "null"
+Q: 18.Starting at which Android version can users revoke permissions granted to the app?
+A: Android 6.0

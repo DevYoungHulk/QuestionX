@@ -1,0 +1,39 @@
+Q: 1.Which situation describes a problematic scenario that would occur if Java allowed multiple inheritance?
+A: You extend from multiple classes. Multiple constructors initialize the same field and it's impossible for Java to work out which takes precedence.
+Q: 2.You are writing a computationally-intensive Java Stream pipeline, which is to be run on a large multi-core machine. The source collection contains a very large number of objects. You will then keep the results that were computed ok in a list. The stream pipeline looks like the following:
+When running it, you notice that it takes a very long time. When examining CPU core load and usage, you notice that most of them are underutilized. What is wrong with your code?
+A: .stream() denotes a sequential stream and should therefore be replaced with .parallelStream()
+Q: 3.Which of the following options compose the following two predicates to represent a short-circuiting logical OR?
+Predicate<Integer> p1 = (i) -> i > 10;Predicate<Integer> p2 = (i) -> i < 5;
+A: p1.or(p2)
+Q: 4.Given a situation where it'd be appropriate to do so, which of the following represents a risk of NOT realizing that defensive copying should be used, and therefore NOT using it?
+A: Changes to mutable objects can cause negative effects in all the objects that share them
+Q: 5.Assuming that the class Student is defined and that its constructor sets the name field in the following code snippet:Which statement would you add to ensure that the name of the Student object pointed-to by the aStudent variable is set to "Student2"?
+A: student.name = "Student2";
+Q: 6.In the context of Java, what is the reasoning behind the generally accepted design principle "Favor composition over inheritance"?
+A: Overusing inheritance can lead to increased maintenance effort and increased resistance to change
+Q: 7.Given the following Student class, exhibiting two missing keywords as described below:What access level modifiers will you use for the getName and setName methods to hide the internal state of this object using encapsulation?
+A: public for both methods
+Q: 8.What does Java's lambda expression allow you to do?
+A: Treat a function as an argument
+Q: 9.Given the following expression:
+What code would you write, using Java 10's new local variable type inference, to use a local variable and assign it the result of the above expression?
+A: var path = Paths.get("src/resources/application.properties")
+Q: 10.How many terminal operations can a Stream pipeline have?
+A: 0 or 1
+Q: 11.What is the role of accessors in the context of encapsulation?
+A: They make instance variables inaccessible from the outside and create accessors to provide, and control, access to them.
+Q: 12.What does it mean that Java passes primitive method arguments by value?
+A: Changes to the values of the parameters exist only within the scope of the method
+Q: 13.Consider the following Java functional interface:Which represents a valid implementation of a lambda expression for this interface?
+A: s -> !s.isEmpty()
+Q: 14.Which of the following represents a benefit of using the enhanced for, also called for each, instead of the general form?
+A: Increased code readability
+Q: 15.What is a good way to ensure that changes to shared objects do not negatively affect the other objects using them?
+A: Sharing copies of the objects in scope, rather than the actual objects
+Q: 16.If you create a class called MyClass and then create a local variable of type MyClass, what can this variable contain?
+A: A null reference or a reference to an object that is an instance of class MyClass, or of any class that is a subclass of MyClass
+Q: 17.A lambda expression is an anonymous method that:
+A: implements the method of a functional interface.
+Q: 18.You are a consultant working at a client's site. Your first meeting is all about understanding the client's business domain, as part of a larger project involving building a new application. Using your transcript of this meeting, together with the use-cases that were put together, how can you identify the main Java classes that will form the application?
+A: Look for nouns in the two documents

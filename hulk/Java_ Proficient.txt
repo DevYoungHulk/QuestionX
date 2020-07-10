@@ -1,0 +1,36 @@
+Q: 1.What is the output of the following program?
+A: Compilation error: incompatible types
+Q: 2.What is displayed when the following code is compiled and executed?
+A: Equals
+Q: 3.Between the following options, which is the most efficient way to concatenate a large number of strings in Java?
+A: The append() method in the StringBuilder class.
+Q: 4.Consider the following code:int i = aReader.read();Which option is true of the variable aReader?
+A: It can either be a FileReader or a BufferedReader.
+Q: 5.How can you stop your class from being inherited by another class?
+A: Declare the class as final.
+Q: 6.Which is the correct command to run an executable JAR file named program.jar?
+A: java -jar program.jar
+Q: 7.Which group of statements are all true about using constructor chaining with this() and super()?
+A: this(...) calls another constructor in the same classsuper(...) calls another constructor in the base classthis(...) and super(...) CANNOT be used together in the same constructor
+Q: 8.How do you create a new class that maps keys to values using the Collections Framework?
+A: Extend from AbstractMap to implement the Map interface
+Q: 9.What is the syntax for bounded type parameters?
+A: public <U extends Number> void someMethod(U u){
+Q: 10.Which is a reserved word in the Java programming language?
+A: native
+Q: 11.What is the class for mutable sequences of characters Java provides called?
+A: StringBuffer
+Q: 12.What is the visibility (access) of myMethod?
+A: default  (package-private)
+Q: 13.What is the difference between checked and unchecked exceptions?
+A: In any given method, checked exceptions need to be caught or declared using throws while unchecked exceptions do not
+Q: 14.Given:Which statement about the output of the above program is true?
+A: The output will always be non-deterministic.
+Q: 15.Which Java class provides variables local to each thread?
+A: ThreadLocal
+Q: 16.If you override the method equals(), what other function must you override for the class to work properly when used as a key in a HashMap instance?
+A: public int hashCode()
+Q: 17.What will be the output of the following program?
+A: howhi
+Q: 18.Which option is true for StringBuffer and StringBuilder?
+A: StringBuffer is thread safe and StringBuilder is not thread safe.

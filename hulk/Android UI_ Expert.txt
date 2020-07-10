@@ -1,0 +1,36 @@
+Q: 1.You want to use the Palette API on an image to extract colors from it in an async manner. How would you do this?
+A: Palette.from(bitmap).generate(new PaletteAsyncListener() {  public void onGenerated(Palette p) {      // do something  }});
+Q: 2.How would you add an exit transition to an activity while starting a new one from it?
+A: getWindow().setExitTransition(new Explode());startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+Q: 3.What would you do to retrieve a Fragment instance that has been added/replaced in a transaction?
+A: Use findFragmentById() on the FragmentManager
+Q: 4.A PopupMenu is...
+A: A menu that is anchored to the View which gets passed in its constructor.
+Q: 5.Which class would you use if you want to animate values of a type for a certain duration?
+A: ValueAnimator
+Q: 6.What's the purpose of the Palette API?
+A: Utility to extract prominent colors from an image.
+Q: 7.How would you save a ViewHolder object associated with a view?
+A: convertView.setTag(viewHolderInstance)
+Q: 8.You want to be notified when the custom compound view is done inflating its layout from an xml file. Which method would you use to detect this?
+A: onFinishInflate
+Q: 9.You are using the reveal animation to hide a view, but after the animation runs a portion of the view is still visible. What's the most likely reason for this?
+A: The endRadius parameter is not set to 0f.
+Q: 10.Which two attributes must we choose from when creating action views inside our action bar?
+A: actionViewClass or actionLayout
+Q: 11.Which of the following is not a valid drawable type?
+A: Shadow drawable
+Q: 12.Which of the following is an invalid source for creating a BitmapDrawable?
+A: From a layout XML
+Q: 13.A layout contains an ImageView. The ImageView has endToEnd and startToStart constraints with the target as parent. The width of the ImageView should be equal to the screen width. The height of the ImageView is to be always a third of its width. Which among the following is the correct approach to design this layout?
+A: Set width and height of the ImageView as 0dp. Set app:layout_constraintDimensionRatio=”h,3:1” constraint on the ImageView.
+Q: 14.What's the expected output if you try to reuse the TypedArray obtained for AttributeSet passed to a custom view?
+A: RunTimeException is thrown.
+Q: 15.Which of the following tags are needed to define and animate a vector drawable from xml?
+A: vector, animated-vector and objectAnimator or animator
+Q: 16.You forgot to pass any shape in the ShapeDrawable constructor. What's the expected output?
+A: The created ShapeDrawable object defaults to rectangle shape.
+Q: 17.Which Fragment method will allow us to retrieve a Context inside a Fragment?
+A: getContext()
+Q: 18.You forgot to pass the color value when creating an instance of ColorDrawble. What's the expected output?
+A: A ColorDrawable instance with black color is created.

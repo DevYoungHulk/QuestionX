@@ -1,0 +1,20 @@
+Q: 1.What is the simplest way to ensure that a field value is either a number or a string when writing a JSON schema?
+A: Using { "type": ["number", "string"] }
+Q: 2.Which of the following would successfully convert this JavaScript object to JSON?const user = { "name": "Person", "email": "person@email.com" }
+A: let jsonUser = JSON.stringify(user)
+Q: 3.What is one possible disadvantage of using the JSON API specification?
+A: It can be restrictive and opinionated.
+Q: 4.How does JSON support efficient encoding of binary data?
+A: By encoding binary data in strings with Base64 or the like.
+Q: 5.How can you constrain the values of a string property to valid phone numbers when writing a JSON schema?
+A: Use the pattern keyword together with the { "type": "string" } validation.
+Q: 6.What is the best way to represent an ordered collection of key-value pairs in JSON?
+A: Use an array of objects, each containing a single key-value pair.
+Q: 7.You need to transmit thousands of distinct records like this between client and server: {"lat": 43.1698, "lng": 170.3325, "name": "Simla Crescent", "type": "Road"}. How can you best reduce the amount of data transmitted while still using JSON?
+A: Represent record values as items in an array, thus saving bytes on property names: [43.1698, 170.3325, "Simla Crescent", "Road"]
+Q: 8.What kind of white-space is allowed when generating JSON by keeping the data unaltered?
+A: Tab, space, line feed and carriage return before or after any token
+Q: 9.How can you insert comments into a JSON document?
+A: Create an extra key whose value consists of the desired comments
+Q: 10.Which example correctly illustrates restricting a "favorite ice cream flavor" value to a given list of strings?
+A: { "type": "string", "enum": ["chocolate", "strawberry", "vanilla"] }

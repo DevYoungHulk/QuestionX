@@ -1,0 +1,43 @@
+Q: 1.When an Activity contains multiple Fragments, what happens to the Fragments by default when the device is rotated from a portrait orientation to a landscape orientation?
+A: The Fragments are destroyed and recreated.
+Q: 2.By default, when does a service derived from IntentService normally shut down?
+A: When all pending requests are handled
+Q: 3.Given the following:What happens when your application is viewed on a device with a screen resolution that conforms to extra-extra-high-density (xxhdpi)?
+A: The system scales the image to the appropriate size.
+Q: 4.If you have an existing application in the Google Play Store, what will happen if you upload an update to the application with the same package name but signed with a different key?
+A: The upload will fail.
+Q: 5.Which allows an Activity to start another Activity without having any knowledge of the package or class of the Activity that will be started?
+A: An implicit Intent
+Q: 6.What is the role of the bundle passed to an Activity's onCreate method?
+A: It contains the Activity state saved by a prior instance of the Activity.
+Q: 7.When defining the layout of a Fragment using XML resource, where are the Views and widgets that make up the Fragment's user interface (UI) stored?
+A: Within a layout resource file containing just that Fragment's UI layout description
+Q: 8.Given the following code:Which logcat tag duplicates information that is already included in the standard logcat message format?
+A: tag2
+Q: 9.Given a reference to an ImageView named imgVw, which will successfully display the ImageView at a width of 500 pixels (rather than the width specified in the layout resource) while maintaining the height specified in the layout resource?
+A: imgVw.getLayoutParams().width = 500;imgVw.requestLayout();
+Q: 10.Given the following code:
+Given the following:
+Which of the following code snippets will add textPluralsight to relativeLayout such that textHello and textPluralsight will be positioned next to one another to display the text Hello Pluralsight ?
+A: int helloId = textHello.getId();
+RelativeLayout.LayoutParams lpPluralsight = new RelativeLayout.LayoutParams(
+  RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+lpPluralsight.addRule(RelativeLayout.RIGHT_OF, helloId);
+textPluralsight.setLayoutParams(lpPluralsight);
+relativeLayout.addView(textPluralsight);
+Q: 11.Many Android application programming interfaces (APIs) require that a valid Context reference be passed as one of the parameters. Which Android component type can be passed as a Context parameter?
+A: Activity and Service
+Q: 12.What is the most appropriate way to define two separate layout resource files for an activity, using one layout resource file when the activity is displayed in a portrait orientation and the other when the activity is displayed in a landscape orientation?
+A: Name both files my_activity.xml. Place one in the layout-port resource folder and the other in the layout-land resource folder.
+Q: 13.What information is contained within a PendingIntent object that serves its purpose?
+A: A description of an intent and a target action to perform with it
+Q: 14.What is a benefit of using a SQLiteOpenHelper derived class to access a SQLite database rather than using the SQLiteDatabase class directly?
+A: It simplifies the creation and updating of the database only when needed and not during app startup.
+Q: 15.An Activity contains two fragments: FragmentA and FragmentB. FragmentA is first added to the Activity followed by FragmentB. What happens when the user presses the back button in a normal scenario?
+A: The Activity shuts down and both fragments get destroyed as well.
+Q: 16.Given the following code:If mydata.txt is a plain text file stored within your app as an asset, which implementation of the openMyData method will correctly open the mydata.txt file?
+A: public BufferedReader openMyData(Context context) throws IOException {  return new BufferedReader(new InputStreamReader( context.getAssets().open("mydata.txt")));}
+Q: 17.Which column name in a content provider's table is required to include to support linking queries to a ListView?
+A: _ID
+Q: 18.Which technique enables you to determine if the data for a row at a given position is currently visible within a ListView?
+A: Use ListView.getFirstVisiblePosition and ListView.getLastVisiblePosition
