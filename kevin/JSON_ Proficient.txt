@@ -1,0 +1,44 @@
+﻿Q: 1.If a client's PATCH request does not include all of the attributes for a resource, what must the server do?
+A: Interpret the missing attributes as if they were included with their current values.
+Q: 2.You have 3 clients consuming your API services. Which of the following allows all clients to request different amounts of data while minimizing the number of requests in a standardized way?
+A: Implement JSON API specifications on all clients and the server.
+Q: 3.What is the purpose of the $schema keyword in JSON schema?
+A: It is the JSON Schema version identifier and the location of a resource which is itself a JSON Schema.
+Q: 4.How can you represent a single string "EOF" in the JSON format?
+A: {"key_name":"EOF"}
+Q: 5.What does the following snippet of JSON schema represent?{ "$ref": "definitions.json#/phone" }
+A: Referencing a phone schema definition in a file in the same folder
+Q: 6.You need to serialize data to disk inside an embedded device in a way that minimizes space requirements. Which format would you choose for serialization in the absence of other requirements?
+A: A custom binary format
+Q: 7.What is the purpose of the format keyword in JSON schema?
+A: It is used to provide semantic validation for any one of a number of well-known formats
+Q: 8.How would you go about including non-standard information in your JSON API document?
+A: Include a top-level "meta" member.
+Q: 9.Which SON Schema validation ensures that the validated property is never null?
+A: "not": { "type": "null" }
+Q: 10.Which Accept header should the client include to ensure that the server response follows the JSON API specifications?
+A: Accept: application/vnd.api+json
+Q: 11.How can you insert comments into a JSON document?
+A: Create an extra key whose value consists of the desired comments
+Q: 12.You make one API call to get the primary data and two additional calls to retrieve related data (example: Customer, Order, History). Using JSON API, how could you resolve this to return all needed data within one response?
+A: Add an array of resource objects in a top-level "included" member.
+Q: 13.Which example correctly illustrates restricting a "favorite ice cream flavor" value to a given list of strings?
+A: { "type": "string", "enum": ["chocolate", "strawberry", "vanilla"] }
+Q: 14.If you wanted to force dates and numbers to be presented as a string, which of the following subschema examples would provide this level of validation?
+A: { "not": { "type": "number" }, "not": { "type": "object" } }
+Q: 15.Which value types are allowed at the top level of a JSON document?
+A: A value of any supported type as well as null
+Q: 16.What keyword would you use when you need to validate against each of the provided subschemas?
+A: allOf
+Q: 17.Which is a common or acceptable means of streaming JSON objects?
+A: Explicitly stating the length of each message
+Q: 18.An error occurs when following the JSON API specifications. What members should be included in the error object?
+A: Every member in an error object is optional
+Q: 19.If having any unspecified properties in the JSON document being validated is restricted, what would you add to your schema definition?
+A: "additionalProperties": false
+Q: 20.Which is the concatenated JSON format a superset of?
+A: Line-delimited
+Q: 21.Which example URL correctly illustrates asking for customer order data with order-id 123 by combining two requests using JSON API specifications?
+A: http://api.mydata.io/customers/123?include=orders
+Q: 22.Historically speaking, what is one of the main goals of the JSON API specification?
+A: To eliminate the need for ad-hoc code per application to communicate with servers

@@ -1,0 +1,43 @@
+﻿Q: 1.Given the following:What happens when your application is viewed on a device with a screen resolution that conforms to extra-extra-high-density (xxhdpi)?
+A: The system scales the image to the appropriate size.
+Q: 2.What is the appropriate way to request permissions for your application?
+A: <uses-permission> in the Android manifest
+Q: 3.When an emulator image is configured to have a secure digital (SD) card, what normally happens to the content of the SD card when the emulator is shut down?
+A: Content is saved to the host computer's disk
+Q: 4.Which Android software development kit (SDK) tool provides the capability to install applications, view logs, and copy files from an Android device?
+A: Android Debug Bridge (adb)
+Q: 5.The following layout resource is used by an Activity to provide a layout that incorporates a navigation drawer:The element with the ID navigation_drawer serves as the navigation drawer. What characteristic of that element causes the panel to slide on and off the edge of the screen?
+A: It has a layout_gravity value of start.
+Q: 6.Given the following element from a layout resource:The method that gets called when the user taps on the button must be a public member of the Activity containing the button and also meet which of the following requirements?
+A: The method must be named sendMessage and have a View as its only parameter.
+Q: 7.Which of the following is not a behavior that a RelativeLayout provides for its children?
+A: Scrolling content that exceeds the available space
+Q: 8.When specifiying the android:id attribute value for a widget within a layout file, sometimes the android:id attribute value begins with "@id/" and other times it begins with "@+id/". What's the difference?
+A: Using "@+id/" will create the identifier if it does not already exist.
+Q: 9.If linearLayout is an instance of LinearLayout with a vertical orientation, which of the following will create and add a TextView to linearLayout such that the TextView occupies only the amount of space required by the contained text?
+A: TextView textView = new TextView(activity);
+textView.setText("Hello from Pluralsight");
+LinearLayout.LayoutParams viewParams = 
+  new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+textView.setLayoutParams(viewParams);
+linearLayout.addView(textView);
+Q: 10.Which class is useful in managing a long-running data load in a way that works correctly with the lifecycle of an Activity or Fragment?
+A: android.app.LoaderManager
+Q: 11.Which element in the manifest file allows you to declare the hardware and software features your app needs?
+A: <uses-feature>
+Q: 12.How do you assure that an Activity containing an EditText field has the soft keyboard visible as soon as the Activity is started?
+A: In the application manifest, set the windowSoftInputMode attribute to "stateVisible" on the activity element.
+Q: 13.The appearance of an Activity can be controlled by associating a theme with that Activity. In which of the following can you associate an Activity with a theme?
+A: Application manifest
+Q: 14.What is a benefit of using a SQLiteOpenHelper derived class to access a SQLite database rather than using the SQLiteDatabase class directly?
+A: It simplifies the creation and updating of the database only when needed and not during app startup.
+Q: 15.Which permission is automatically granted by the system to your app if it is added in the app manifest?
+A: VIBRATE
+Q: 16.Which allows an Activity to start another Activity without having any knowledge of the package or class of the Activity that will be started?
+A: An implicit Intent
+Q: 17.You are using a custom layout resource to customize the appearance of the cells displayed within a ListView. Which class would you most likely inherit from to display application data values within the ListView cells?
+A: BaseAdapter
+Q: 18.Which is required for an Activity in one application to handle startActivity calls that originate in a different application?
+A: Intent filter
+Q: 19.What information is contained within a PendingIntent object that serves its purpose?
+A: A description of an intent and a target action to perform with it

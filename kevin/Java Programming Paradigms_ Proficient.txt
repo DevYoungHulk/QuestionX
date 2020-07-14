@@ -1,0 +1,38 @@
+﻿Q: 1.Consider the following Java functional interface:
+Which of the following represents a change that will make StringValidator NOT be a functional interface anymore?
+A: Add an abstract method
+Q: 2.How many terminal operations can a Stream pipeline have?
+A: 0 or 1
+Q: 3.Which of the following represents a benefit of using the enhanced for, also called for each, instead of the general form?
+A: Increased code readability
+Q: 4.Why are Java Streams described as lazy?
+A: Computation on the data source is only performed when the terminal operation is started
+Q: 5.You are in the process of writing your first Java Stream. You have chosen your data source, added a few filters and are now ready to finish the stream pipeline. What type of operation is needed now?
+A: Terminal
+Q: 6.Which situation describes a problematic scenario that would occur if Java allowed multiple inheritance?
+A: You extend from multiple classes. Multiple constructors initialize the same field and it's impossible for Java to work out which takes precedence.
+Q: 7.A lambda expression is an anonymous method that:
+A: implements the method of a functional interface.
+Q: 8.What does it mean that Java passes reference method arguments by value?
+A: When the method exits, the passed-in argument reference still points to the same object as before the method call. The values of that object's fields can however be changed in the method.
+Q: 9.What is meant by the "fall through" scenario in the context of a Java switch statement?
+A: In the absence of a break label,  all statements that follow a matched case label will be executed in order, regardless of the result of the evaluation of subsequent case labels
+Q: 10.If you create a class called MyClass and then create a local variable of type MyClass, what can this variable contain?
+A: A null reference or a reference to an object that is an instance of class MyClass, or of any class that is a subclass of MyClass
+Q: 11.If immutable objects cannot change state after creation, what is the industry best practice for updating them?
+A: An immutable class requires a new object for each distinct value and therefore an update can only be carried out by creating a brand new object.
+Q: 12.What is meant by a side-effect in the context of a method call with reference type arguments?
+A: A modification to the state of a non-local object (other than the method returning a value)
+Q: 13.Assume two classes exists, Dog and Animal, where Dog extends Animal. In addition, the following factories exist and a return type in DogFactory's make() method is missing:Which return type for make() in DogFactory will allow the code to compile?
+A: Dog
+Q: 14.Why is immutability so important in a multi-threaded Java application?
+A: If an object cannot change its state after construction, it is impossible for thread interference to leave that object in a corrupt state, or for a thread to use the object while it is in an inconsistent state.
+Q: 15.What does it mean that Java passes primitive method arguments by value?
+A: Changes to the values of the parameters exist only within the scope of the method
+Q: 16.Given the following Stateful class, which doesn't define any setter methods that could be used to mutate its state:
+Assume you have access to an object of type Stateful, referenced by a variable stateful. Which of the following ways correctly represents a modification of the state of the object referenced by stateful?
+A: stateful.getContent().add("yet another state");
+Q: 17.What is the role of accessors in the context of encapsulation?
+A: They make instance variables inaccessible from the outside and create accessors to provide, and control, access to them.
+Q: 18.Assume you declared a class with a FIELD of type 'int' and you haven't assigned a value to it. How does Java handle this situation?
+A: The compiler sets a default value of 0 for uninitialized fields of type int

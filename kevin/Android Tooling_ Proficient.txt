@@ -1,0 +1,41 @@
+﻿Q: 1.Where do you add new maven repositories used to resolve gradle dependencies?
+A: In the project build.gradle file
+Q: 2.What can a variantFilter be used for in your build.gradle?
+A: To skip building certain variants of your app based on custom logic.
+Q: 3.In your Android project, you have overridden a layout/layout.xml layout with layout-sw600dp/layout.xml. The screen size support does not work on Android 3.1 devices and lower, however. How would you override "layout.xml" to add the same screen size support on all these devices?
+A: Duplicate layout-sw600dp/layout.xml and rename it to layout-large/layout.xml.
+Q: 4.When using multidex in your gradle build, how do you set the max java heap size if your app exceeds the standard size?
+A: Set the javaMaxHeapSize property in the module build.gradle file.
+Q: 5.When inspecting classes with the Android Profiler, what is the difference between the "Native Size" and "Shallow Size" properties of an instance?
+A: Native Size represents the amount of native memory being used, while Shallow Size represents the amount of Java memory being used.
+Q: 6.Which of the following is a correct differentiating feature of the Debug operation in Android Studio?
+A: Set breakpoints in Java/Kotlin/C++ code
+Q: 7.You want to see the Java version of your Kotlin code. How would you do this in Android Studio?
+A: Open the file, open the Kotlin Bytecode pane, then select "Decompile".
+Q: 8.You created an Android Studio project using Basic Activity template. What is the result of adding another Activity using Android Studio template by enabling the Launcher Activity option?
+A: The app module will have two launcher activities.
+Q: 9.Your new team has a specific code style that is enforced on each commit before it can be pushed to version control. How can you add their code style file to your installation of Android Studio?
+A: Open the Code Style menu and use Import Scheme.
+Q: 10.When building a custom gradle task, what properties can tell you what is going on while the task is running?
+A: group and description
+Q: 11.You are frustrated by the automatic addition of `TODO("not implemented")` to every overridden method in your Kotlin files, which crashes the app if left unattended. What changes could be made to a feature of Android Studio in order to solve their problem?
+A: Alter the default code template for "New Kotlin Function Body" to use comment syntax instead of calling the TODO function.
+Q: 12.Given the annotation `084bb39da 08/19/2018 Hutchinson 5` for a source file under version control, to what does the "5" refer?
+A: The file has been committed 5 times with changes
+Q: 13.You built a custom gradle task to copy the output .apk files to a different folder:
+Why weren't the latest apk files copied over?
+A: The copyApks task depends on a task that does not build the new apk, so the apk files don't exist yet or are an older version.
+Q: 14.What is the difference between the Step Into and Step Out commands of the Android Studio debugger?
+A: Step Into advances to the first line in a given method call. Step Out advances to the next line outside the current method call.
+Q: 15.You are tired of inputting your signing configuration each time you want to make a new release. How do you automate app signing for your application?
+A: Add the signing configuration in the project structure and assign it to your release build type.
+Q: 16.You are developing a large Android application and Android Studio starts to lag because the linter is constantly processing the application code. What is the best way to improve these performance issues?
+A: Turn on options such as "quiet" and "ignoreWarnings" in the linterOptions of the build.gradle
+Q: 17.While trying to optimize memory of your application, you notice memory usage spikes at particular points. How would you use the Android Profiler to figure out what objects are causing this memory leak?
+A: Dump the Java heap at the points.
+Q: 18.A developer on your team sent you a Stacktrace from the Android app you are working on and needs help determining what is happening. How can you use this stacktrace to get to the bottom of the issue if you cannot reproduce it yourself?
+A: Use the Analyze Stacktrace tool to paste in the stacktrace to find the code references that caused the error.
+Q: 19.Which Android Studio operation cleans, compiles and creates project APK(s)?
+A: Rebuild project
+Q: 20.You found a logic error in a file and need to locate the original version to understand the author's intent. You run "Show History" and see a commit with the title "Refactor file to Kotlin." How can you get to the original version of the file?
+A: Run Git > Compare With on the Java file that was refactored to Kotlin

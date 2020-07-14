@@ -1,0 +1,39 @@
+﻿Q: 1.Which version control system (VCS) IS NOT supported by Android Studio 3 out-of-the-box?
+A: Perforce
+Q: 2.What is the type meaning of the wildcard (?) in the context of Java Generics?
+A: Unknown type
+Q: 3.It is widely acknowledged that one of the main benefits of using Gradle, especially over other build tools, is flexibility. Which of the following is an example of the provided flexibility?
+A: Gradle exposes its Tooling API for embedding and extension
+Q: 4.A developer is working on a Gradle-based Java project. This project is using the company's internal UNSECURED Maven repository. One of the dependencies that is required to build the final version of the project cannot be stored in an unsecured repository. However, it can be provided as a file (artifact) via a secure transfer mechanism, inside the company's internal network, on the developer's machine, due to these above mentioned concerns. What is the EASIEST way for the developer to include this dependency in the build?
+A: Use the artifact as a Gradle flat (filesystem) dependency directly from the developer's local machine
+Q: 5.Which solution represents a good alternative to threads polling for communication?
+A: Using a publisher-subscriber model, where 'client' threads get notified about results of interest
+Q: 6.Gradle's build scripts are based on what?
+A: Custom domain-specific language (DSL), based on Groovy
+Q: 7.In Java, what can an interface do?
+A: It can extend multiple other interfaces
+Q: 8.Which feature was added with Java 8?
+A: Interface default methods
+Q: 9.Which of the following is a valid prerequisite for installing Gradle?
+A: Java
+Q: 10.Which example represents a correct declaration of a Gradle dynamic dependency?
+A: org.springframework:spring-core:5.+
+Q: 11.Which statement is true?
+A: A Java Runtime Environment (JRE) contains a Java Virtual Machine (JVM)
+Q: 12.You are using Bash on a Unix operating system. Which command copies the contents of the "source" folder into the "dest" folder?
+A: cp -r /source/. /dest/
+Q: 13.Given the following Employee class:A list of employees is held in a variable of type List<Employee> called employees.The code snippet below tries to find all employees in city A and return a list of IDs sorted in decreasing order of salary. However, when running it, the result is incorrect. What could be the problem?
+A: Reverse the Comparator returned by the comparing(...) method
+Q: 14.For this question, assume you are using Command Prompt (cmd) on Windows. How do you execute app.exe with parameter 't' and save its output to output.txt?
+A: app.exe /t > output.txt
+Q: 15.A developer is working on an Android application. The build process involves the automated generation of Java code, which, unfortunately, doesn't work well due to a third-party library. When debugging the issue, the developer cannot see ANY of the generated code under the 'java' directory in the Project view. What could be the problem?
+A: The developer is looking in the wrong place; any generated Java code will be present under generated Java.
+Q: 16.Which is a feature of Gradle that Maven does not include?
+A: A long-lived 'daemon' process which caches information about the build
+Q: 17.A consultant is working on a custom Android application at a client's site. The application uses some custom SDK tooling, which isn't present in an out-of-the-box installation of Android Studio. The client stores this tooling in its own repository, which is up and running and visible from the consultant's local machine, but the custom tooling doesn't show up in Android Studio.
+What is the problem?
+A: This new repository needs to be added in: SDK Manager>SDK Update Sites
+Q: 18.When creating a concrete Generics Collection with a generic type parameter String, can the diamond (<>) operator be used?
+A: Yes, on the right handside of the operation (e.g. constructor invokation)
+Q: 19.Once a deadlock occurs, how can you resolve it so that the application can carry on working as it did before the issue arose?
+A: Use thread termination to break the deadlock chain because threads in a deadlock are stuck waiting indefinitely.

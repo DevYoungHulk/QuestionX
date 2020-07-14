@@ -1,0 +1,45 @@
+﻿Q: 1.How would you add the ability for an app to connect to a local HTTP server for debugging when it is normally configured to connect to a remote HTTPS server?
+A: Add a <debug-overrides> tag to a Network Security Configuration file, specifying a debug-only CA.
+Q: 2.Which of the following code snippets would be used in the Android Manifest to declare a custom permission?
+A: <permission
+      android:name="com.example.myapp.permission.DEADLY_ACTIVITY"
+      android:label="@string/permlab_deadlyActivity"
+      android:description="@string/permdesc_deadlyActivity"
+      android:protectionLevel="dangerous" />
+Q: 3.What is one precaution of using certificate pinning?
+A: It can be bypassed
+Q: 4.Why is it recommended to clear the WebView's cache once the user exits the app, and not to store sensitive data?
+A: Because malicious scripts can access the cached data
+Q: 5.You have an HTML file in your app package, which you are loading into a WebView using :This HTML file is supposed to load several images and JavaScript files from your server, but is unable to. What is causing this issue?
+A: A violation of Same Origin Policy
+Q: 6.Which of the following is an accurate definition of ProviderInstaller?
+A: A utility class for installing a 
+dynamically updatable Provider
+to replace the platform default 
+provider
+Q: 7.What does the <pin-set> tag allow within a <domain-config>?
+A: It allows an app to use certificate pinning, including a backup <pin>.
+Q: 8.You are using the Kotlin require() method to sanitize your code's output:
+Why is your code throwing an IllegalArgumentException?
+A: The Kotlin sanitizing method require() throws an IllegalArgumentException if the value is false.
+Q: 9.What dialog forces a user to select the app to use for an action every time it is initiated?
+A: Chooser
+Q: 10.Your application has an Alarm feature in which it is critical that it goes off at the right time. Your users are experiencing a problem where the alarm doesn't go off when the phone has been recently turned back on, but not unlocked. How do you fix this?
+A: Request access to run during Direct Boot.
+Q: 11.You want to store some files that should be world readable, but should be removed when your app is uninstalled. How should you set them up?
+A: Store them in an app-specific directory in external storage.
+Q: 12.You own a website and your end-users complain that their Android apps get an error while connecting via HTTPS. The error showed: "Hostname 'abc.com' was not verified". What is a solution to this issue?
+A: Fix the server certificate's Subject or Subject Alternate Name to include the website's address.
+Q: 13.In the snippet below, what needs to change to ensure that certificate pinning works properly?
+A: Add the digest attribute to each of the <pin> tags and remove the expiration date.
+Q: 14.Which manifest file is given the highest priority while merging?
+A: Build variant manifest
+Q: 15.Which method of ProviderInstaller allows you to verify that the security provider on a device is up-to-date?
+A: installIfNeeded()
+Q: 16.Given the snippet below, and knowledge that the CA used only for "krypto.com" has just been
+compromised, what would you do to ensure that the app is safe?
+A: Remove the <domain> tag that references "safe.krypto.com".
+Q: 17.You developed two complementary applications, both with the same permissions. After you install the first one, the installation of the second fails. Why is that happening?
+A: There cannot be other packages with the same permission name, unless they are signed with the same certificate.
+Q: 18.Which method determines if the calling process of an IPC you are handling has been granted a particular permission?
+A: checkCallingPermission()

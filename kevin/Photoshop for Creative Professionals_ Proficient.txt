@@ -1,0 +1,36 @@
+﻿Q: 1.How can you make filters nondestructive?
+A: By converting the layer to a Smart Object
+Q: 2.What happens when you open a document that has fonts not installed on your compuer?
+A: The Missing Fonts dialog box opens and offers to resolve the missing fonts with Typekit.
+Q: 3.Photoshop doesn't actually add any new detail to an image when sharpening. What is it really doing?
+A: Photoshop creates the illusion of sharpness by increasing the contrast of edge pixels.
+Q: 4.What does "Paste Lorem Ipsum" do?
+A: Pastes placeholder text
+Q: 5.When is the Start Workspace displayed?
+A: At launch or whenever no documents are open.
+Q: 6.What happens when you open a DNG file in Photoshop?
+A: The Camera Raw plugin opens up, and that is where you edit the image.
+Q: 7.Hitting the space bar when a file thumbnail is selected will ________.
+A: reveal a full screen preview of the image
+Q: 8.What does a default curve look like in the Curves adjustment?
+A: A straight diagonal line
+Q: 9.What does DNG stand for in reference to a DNG file?
+A: Digital Negative
+Q: 10.What does the Onion Skin mode allow you to do?
+A: It allows you to see content drawn on the current frame plus content drawn on the surrounding frames.
+Q: 11.When using the Perspective Warp, what does holding Shift and clicking on a defined edge do?
+A: It constrains the edge during further manipulation.
+Q: 12.Where can you go to change an images document's resolution in Photoshop?
+A: Image > Image Size
+Q: 13.What is the keyboard shortcut to make a group out of multiple selected layers?
+A: Ctrl or Cmd + G
+Q: 14.When using the Spot Healing Brush Tool, what do you select in the options bar to generate data from every visible layer?
+A: Sample All Layers
+Q: 15.Which Script allows you to automatically import multiple images into Photoshop and align them at the same time?
+A: Load Files Into Stack
+Q: 16.When using the scrubby slider feature to change value option, holding Shift accelerates the scrubbing by a factor of?
+A: 10
+Q: 17.What will painting with black in Quick Mask mode do to a selection?
+A: Subtract from the selection
+Q: 18.What will be enabled when the circled icon is selected in the Character Panel?
+A: Ordinals
