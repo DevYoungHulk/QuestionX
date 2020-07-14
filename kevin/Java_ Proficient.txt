@@ -1,0 +1,38 @@
+﻿Q: 1.What is the difference between checked and unchecked exceptions?
+A: In any given method, checked exceptions need to be caught or declared using throws while unchecked exceptions do not
+Q: 2.Which statement is true about java.util.Collection?
+A: It's an interface that represents a container of objects.
+Q: 3.Which class will support an efficient and simple reading of text from a character input stream?
+A: BufferedReader
+Q: 4.Which option does NOT describe a good implementation of the equals method?
+A: It checks for the same reference of non-null references
+Q: 5.Which can a class extend?
+A: One non-final class
+Q: 6.When are Java classes loaded into a Java virtual machine (JVM)?
+A: As they are needed by an application
+Q: 7.What does a non-static synchronized method use to synchronize access to a thread?
+A: The lock associated with the object (this)
+Q: 8.What is the result when you compile and run the following code?
+A: 0123
+Q: 9.How many bytes are in a 'long'?
+A: 8
+Q: 10.When is an object's finalize method called?
+A: Right before the object is garbage collected
+Q: 11.What is true when a non-static method tries to access a static variable in the same class?
+A: An instance of the class does not need to be created
+Q: 12.Which method forces one thread to wait for another thread to finish?
+A: join()
+Q: 13.What is the output of the following code?
+A: 08
+Q: 14.Why won't this following code compile?
+A: It requires use of the .mapToInt() method before calling sum
+Q: 15.The following program is tested in a version of Java where Integer.toString() creates a new String instance every time it is called. What is the output?
+A: Prints Not Equal
+Q: 16.What does the == operator check when used on two objects?
+A: That the object references refer to the same instance
+Q: 17.What does the keyword 'volatile' do on a field?
+A: Guarantee that the field's current value is read, not a thread-cached value.
+Q: 18.Which feature is provided by TreeMap?
+A: It provides log(n) time performance for get operations
+Q: 19.What does a  call to System.gc() do?
+A: It suggests that the JVM expend effort toward recycling unused objects.

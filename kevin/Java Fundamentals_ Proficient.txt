@@ -1,0 +1,44 @@
+﻿Q: 1.Why should you use the generic version of the interfaces from the Collection API?
+A: Because it brings type safety to your application
+Q: 2.The following code is a part of a Java program: How many instances of String are created at the end of the program?
+A: 3
+Q: 3.You need to create a method in a class to be used from within this class and from all the extending classes. What visibility modifier are you going to use?
+A: protected
+Q: 4.You have the following class:
+You are about to write a Collection class that will extend this class. Among the following statements, which one is true for your Collection class?
+A: You need to override the size() method.
+Q: 5.What is the correct type for the result variable?
+A: double
+Q: 6.What is the difference between an instance of the String class and array of chars?
+A: An instance of String is a reference on an object that wraps an array of chars or bytes, depending on the version of Java.
+Q: 7.Consider the following code:
+The readFile() call may throw an IOException and the parseInt() call may throw a NumberFormatException, which is an unchecked exception.Suppose that the readFile() throws this IOException, and that the parseInt() also throws this NumberFormatException. What does this code print out?
+A: IOException
+Finally
+Q: 8.Given the following enumeration:
+What code can you write to get an instance of this enum?
+A: Civility civility = Civility.MRS;
+Q: 9.You have an application developed by two teams. The first team uses Windows development machines and the second one MacOS development machines. They both deliver a module of your application, the source code and the compiled code in JARs. How can you run this application on your Linux server?
+A: Package the JARs, deploy them and run them without having to recompile anything.
+Q: 10.What is the root class of the exception class' hierarchy?
+A: Throwable
+Q: 11.Which statement declares an integer field that is shared by all the instances of the Holder class?
+A: public class Holder {   private static int index;}
+Q: 12.You have the following class:
+You run the code:
+In what order are the elements called?
+A: The initializer for the size field, then the constructor that takes the size
+Q: 13.Suppose you have the following class:
+Among the following classes, which one CANNOT call the getId() method?
+A: package model.view;
+public class View {}
+Q: 14.You need to concatenate a list of instances of String together. What precautions should you take?
+A: The precaution is to avoid the unnecessary creation of instances of String.
+Q: 15.Which code snippet will compile?
+A: None of the snippets will compile
+Q: 16.i is an int of value 2 and the result variable is declared. What does the following code print out?
+A: result = 4
+Q: 17.You have a list of doubles. Some of those doubles may be NaN or INFINITY and they should not be added. You must compute the sum of these doubles. What code will you write?
+A: double sum = 0.0;for (double d: list) {   if (Double.isFinite(d)) {      sum += d;   }}
+Q: 18.What do you need to make an interface a functional interface?
+A: Make sure it has only one abstract method that needs to be implemented.

@@ -1,0 +1,36 @@
+﻿Q: 1.What happens if we return false when overriding onCreateOptionsMenu()?
+A: The menu will not be shown.
+Q: 2.What is the difference between a color resource and a color attribute?
+A: A color resource is a defined color value that can reused throughout the entire app, a colour attribute is a property on various XML attributes that take a color (either hex or resource reference) as a parameter.
+Q: 3.How would you draw text on a custom view?
+A: public void onDraw(Canvas canvas) {  // do something  canvas.drawText(text, mTextX, mTextY, mTextPaint);}
+Q: 4.Which method of an Adapter would you write the logic to create ViewHolder objects?
+A: getView
+Q: 5.Which of the following XML elements defines a FrameLayout?
+A: <FrameLayout />
+Q: 6.You want to show an array of strings in a ListView. How would you create an adapter for this?
+A: new ArrayAdapter<String>(context,     android.R.layout.simple_list_item_1, android.R.id.text1, array)
+Q: 7.Which XML tag must we use to declare a fragment, specifically, in XML?
+A: Fragment
+Q: 8.What is the most likely explanation for a layout appearing differently when switching between two languages on our device?
+A: That specific layout is qualified by locale.
+Q: 9.What is the root element when defining a menu in XML?
+A: menu
+Q: 10.You have applied a SpringAnimation to a view but on running the app you see that the view never stops bouncing once the animation starts. What's the most likely cause for this?
+A: The damping on the animation is set as zero.
+Q: 11.Which parameters of the ViewAnimationUtils.createCircularReveal() method would you alter to change the point on the view from where the reveal animation starts?
+A: The centerX and centerY parameters
+Q: 12.What would you do to split the UI (whole screen) into different sections with their own logic and views?
+A: Create multiple fragments.
+Q: 13.Given that we have set a tag on a Fragment inside our layout, how do we retrieve it from our FragmentManager?
+A: By calling findFragmentByTag() and passing in the given String tag.
+Q: 14.How would you set the primary color for your app in styles.xml?
+A: <item name="colorPrimary">@color/colorPrimary</item>
+Q: 15.Given that we need to organize our layout's views in a grid-like fashion, with columns and rows, what should we do?
+A: Place the views in a GridLayout.
+Q: 16.Which method would you use to bind an adapter to an AdapterView?
+A: setAdapter
+Q: 17.What's the difference between Canvas and Paint class used in onDraw of custom views?
+A: Canvas holds the bitmap on which drawing is performed, whereas Paint holds the color and styling information for a view.
+Q: 18.Which interface would you implement to listen for click events on an AdapterView?
+A: AdapterView.OnItemClickListener

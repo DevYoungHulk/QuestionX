@@ -1,0 +1,44 @@
+﻿Q: 1.What is the defining characteristic of a StatelessWidget?
+A: Stateless Widgets do not require mutable state.
+Q: 2.What is the purpose of a LocalizationsDelegate?
+A: The LocalizationsDelegate loads the correct translations based on a given locale.
+Q: 3.If you are writing a test for a class that interacts with the host platform via a Flutter plugin, and you run the test, but receive a `MissingPluginException`, what action could you perform to solve this issue?
+A: You must mock the MethodChannel for the Flutter plugin in the test environment.
+Q: 4.What will be the type of the `result` from the following query?
+A: List<Map<String, dynamic>>
+Q: 5.If you have an app and you've installed the cloud_firestore plugin, added your apps to the Firestore Console, and launched your application on an emulator, but for some reason you cannot read and write data to the database, what is the most likely cause?
+A: The permissions for the Firestore Database are not properly configured.
+Q: 6.An app is using the url_launcher pacakge to display a web page, what is the next step to correctly implementing this method? (This method might be called in an onTap() handler for a button.)
+A: The user will be taken out of the app and the url will be displayed in Safari.
+Q: 7.A bugfix has been merged into the Flutter SDK very recently (less than one week ago) and running flutter upgrade and restarting the app did not appear to fix the issue on your machine. What is the most likely explanation?
+A: The wrong channel (e.g. master, dev, beta) has been selected.
+Q: 8.What property of the MaterialApp Widget defines the locales that your application can handle?
+A: supportedLocales
+Q: 9.If you were given a button and wanted to display an Alert when the button is pressed, how would you approach this?
+A: Provide an onPressed callback to the button that displays a dialog using the showDialog function.
+Q: 10.If you were asked to verify your code contains no analyzer or formatting errors on TravisCI, what modification would you make to your project?
+A: Create a travis.yml file that includes the dartfmt and dartanalyzer steps.
+Q: 11.How would you run your Flutter app in a custom zone that's configured to capture errors?
+A: runZoned<Future<Null>>(() async {
+
+  runApp(MyApp());
+
+}, onError: (error, stackTrace) {
+
+  // Send the error to your Error Reporting Service
+
+});
+Q: 12.How can you explicitly define the text direction for a portion of your app?
+A: Create a Directionality Widget and provide the appropriate textDirection property.
+Q: 13.Which of the following must be true for Heros and Routes?
+A: Routes must not contain more than one Hero for each tag.
+Q: 14.What would you do to share the string "Flutter is Awesome" with other apps?
+A: Install package:share and use Share.share("Flutter is awesome").
+Q: 15.Given the following function, how would you modify the SQL statement to safely and efficiently filter users with a given name? (Assume that the user is entering nameFilter.)
+A: var result = await _db.rawQuery('SELECT * FROM "USERS" WHERE name = \$1', [nameFilter]);return result.map((m) => User.fromJson(m)).toList();
+Q: 16.What is the purpose of the Interval curve?
+A: The Interval curve can be used to delay the start of an animation or shorten the length of an animation.
+Q: 17.If you have an app that is reporting errors to an error reporting service, and you notice that you are capturing Dart exceptions, but notice you're failing to capture additional errors, such as PlatformExceptions, what changes would you make to your code to capture these exceptions?
+A: Override the FlutterError.onError function to capture and report errors.
+Q: 18.If a specific DragTarget is not accepting data from certain Draggable Widgets, but it works for others, what is the most likely explanation?
+A: The onWillAccept property of the DragTarget is rejecting specific forms of input.
