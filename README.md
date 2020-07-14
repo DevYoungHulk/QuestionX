@@ -9,4 +9,7 @@ A:xxx
 输入关键字即可查询
 -h 呼出帮助
 -q(or ctr+c) 退出程序
+
+自动挂视频脚本，观看视频需要点下一步时候自动点击：
+https://greasyfork.org/zh-TW/scripts/407034-pluralsight-continuous-play-next-module
 ```
