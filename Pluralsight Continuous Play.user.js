@@ -4,8 +4,10 @@
 // @version    0.1
 // @require      https://libs.baidu.com/jquery/2.0.0/jquery.min.js
 // @description  Pluralsight Continuous Play
+// @match      https://app.pluralsight.com/player*
 // @match      https://app.pluralsight.com/course-player*
-// @copyright  2020, Hulk.Yang
+// @copyright  2019, Hulk.Yang
+// @include https://app.pluralsight.com/player*
 // @include https://app.pluralsight.com/course-player*
 // ==/UserScript==
 
